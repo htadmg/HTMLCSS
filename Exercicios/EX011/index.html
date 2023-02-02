@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou sismplimente aumente e diminua o tamanho do seu navegador</p>
+<picture><!--colocar o source de na sequencia de baixo para cima de maior para menor/ ter variedade de tamanhos de imagem para ter melhor funcionabilidade -->
+    <source media="(max-width: 750px )" srcset="imagens/fotop.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/fotom.png" type="image/png"png>
+    <img src="imagens/fotog.png" alt="Imagem flexivel">
+</picture>
+<h1>Reprpduzindo Áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML</p>
+<audio preload="metadata" autoplay controls loop>
+<source src="midia/musica1.mp3" type="audio/mpeg">
+
+<p>Infelizmente seu navegador não consegue reproduzir audio,  <a href="midia/musica1.mp3">Clique aqui para baixar aquivo</a></p>
+</audio>
+<!-- audio funciona para inserir uma musica igual link para baixar-->
+<!--autoplay para funcionar sozinho, 
+    controls para aparecer o botão de play e tempo de musica, loop para tocar em loop se a musica for curta-->
+</body>
+</html>
