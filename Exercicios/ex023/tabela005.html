@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: rgba(119, 136, 153, 0.329);
+
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: lightslategray;
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: lightslategray;
+        }
+        td.numero{
+            text-align: right;
+        }
+        col.estado{
+            background-color: aqua;
+        }
+        col.população{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPITION
+            THADER
+                TR, TD, TH
+            TBODY   
+                TR, TD, TH
+            TFOOTT
+                TR, TD, TH
+        -->
+    <TABle>
+        <colgroup>
+            <col class="estado">
+            <col class="população">
+        </colgroup>
+        <caption> População das Unidades Federativas</caption>
+        <Thead>
+            <tr>
+                
+                <th scope="col">Estado</th><!--significa col que o titulo se refere a dados que estão na coluna-->
+                <th scope="col" style="width: 50px
+                ;">População</th>
+                
+            </tr>
+
+        </Thead>
+        <Tbody>
+            <tr >
+                <td>São Paulo</td>
+                <td class="numero">40 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">17 459 456</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">15 456 852</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">40 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">85 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sulo</td>
+                <td class="numero">69 919 049</td>
+            </tr>
+            <tr> <td>Pernambuco</td>
+                <td class="numero">12 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">13 919 049</td>
+            </tr>
+            <tr>
+                <td> Pará</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td> Santa Catarina </td>
+                <td class="numero">6 248 436</td>
+            </tr>
+            <tr>
+                <td>  Goiás</td>
+                <td class="numero">6 003 788</td>
+            </tr>
+            <tr>
+                <td> Maranhão </td>
+                <td class="numero">6 574 789</td>
+            </tr>
+            <tr>
+                <td> Espírito Santo </td>
+                <td class="numero">3 514 952</td>
+            </tr>
+            <tr>
+                <td> Paraíba </td>
+                <td class="numero">3 766 528</td>
+            </tr>
+            <tr>
+                <td>  Amazonas</td>
+                <td class="numero">3 483 985</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+             <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso </td>
+                <td class="numero">3 035 122</td>
+            </tr>
+
+
+        </Tbody>
+        <TFoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--se refere a titulos que os dados estão na mesma coluna-->
+                <td class="numero"><strong>321 462 789</strong></td>
+            </tr>
+        </TFoot>
+
+
+
+
+    </TABle>
+
+  
+
+</body>
+</html>
