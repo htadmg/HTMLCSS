@@ -25,12 +25,19 @@
                 </optgroup>
             </select>
         </p>
+        <p>
             <label for="iprof">Profissão</label>
             <input type="text" name="prof" id="iprof" list="lstprof">
-            <option value="ADM">Rio Grande do Norte</option>
-            <option value="">Maranhão</option>
-            <option value="PE">Pernambuco</option>
-
+            <datalist id="lstprof">
+                <option value="ADM">Administração</option>
+                <option value="CONT">Contabilidade</option>
+                <option value="DEV">Desenvolvedor </option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
